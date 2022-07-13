@@ -1,0 +1,8 @@
+given array nums and # k return k most frequent elements
+
+first thought is to use a hash map to add each number
+in the array to as a key iterating the value with the
+number of occurances
+
+then we can use a for loop that checks for the max value
+k number of times, deleting the last max value
