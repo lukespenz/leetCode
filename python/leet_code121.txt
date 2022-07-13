@@ -1,0 +1,12 @@
+To find the max profit we need to compare the lowest price with the highest price on a linear timeline. This can best be accomplished with a left, right sliding window: left remaining put while right is higher and keeping track of the difference between the two. 
+
+First define our l,r points and max profit variables
+
+Set a while loop for r going up for the length of the prices array
+
+Then we’ll check if the left pointer is less than the right point, if it’s ever not we’re replace the l pointer with index at r, while checking r - l each time to see if that’s ever bigger than the maxP, if it is we’ll replace maxP with the new largest number
+
+Else we just move r up one index
+
+We only go through the array once so it will have a space memory complexity of O(1) because we used no extra memory, no extra arrays, just a couple pointers
+ and time complexity of O(n) 
