@@ -1,0 +1,9 @@
+To find the longest substring without repeating characters within a string I would use a sliding window because by using two pointers we only need to go through the array once thus minimizing the space-time complexity. 
+
+We’ll first create our left and right pointers, adjusting the right pointer while it is less than the length of the array
+
+We’ll increase the left pointer index by 1 if whenever the right pointer points to a value we have seen before
+
+We can check this by adding every value r points to, into a hash map since checking for that maintains a constant space-time complexity O(1)
+
+We’ll also want to declare a variable set to the longest substring which we can update whenever the difference between r and l is greater than our previous largest substring which we can check during the while loop
