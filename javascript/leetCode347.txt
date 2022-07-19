@@ -6,3 +6,9 @@ number of occurances
 
 then we can use a for loop that checks for the max value
 k number of times, deleting the last max value
+
+#BUCKET SORT
+
+We add numbers into their respective 'bucket' based on how
+many times it occurs
+
